@@ -3,7 +3,7 @@ width:100px;
 height: 100px;
 border-radius: 50px;
 position:relative;
-animation: bouncing 20s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+animation: bouncing 20s  cubic-bezier(1,0,0,1) alternate infinite;
 background-color: #ffeb3b;
 left:40vh;
 }
@@ -12,16 +12,15 @@ body{
     height: 100vh;
     padding:0;
     margin: 0;
-    animation: color 20s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+    animation: color 20s  cubic-bezier(1,0,0,1) alternate infinite;
 }
 @keyframes bouncing{
     0% {top:0}
-    50%  {top:100vh;}
-    100% {top:0;}
+    100% {top:100vh;}
 }
 @keyframes color{
     0%{background-color:rgba(178, 213, 242, 0.42)}
-      30%{background-color:rgba(178, 213, 242, 0.42)}
-    50%{background-color:#111;}
-      70%{background-color:rgba(178, 213, 242, 0.42)}
+      60%{background-color:rgba(178, 213, 242, 0.42)}
+    100%{background-color:#111;}
+    
 }
